@@ -1,0 +1,106 @@
+Q1) Explore and explain various methods in console function
+Ans: console is an object that provides access to the browser's debugging console.
+Following are some methods of console object along with their usage:
+
+1) console.log()
+simply logs whatever passed to the method.
+ex: if we have a string var name ="First thing";
+then, console.log(name);
+would simply print "First thing" in browser console.
+
+2) console.warn()
+dispalys the message/string passed as a warning on browser console.
+ex:console.warn("this is a warning");
+
+3)console.error()
+displays the message as error.
+ex: console.log("Alert!");
+
+4)console.clear()
+clears the browser console like a clean slate.
+
+5)console.table()
+outputs the data in form of a table
+
+6)console.time() & console.timeEnd()
+console.time() Starts a timer with a name specified as an input parameter whereas  console.timeEnd() can be considered as end point to stop the timer.
+ex: console.time("TimerHere")
+    var a=9;
+    var b=8;
+    var c= a+b;
+    console.timeEnd("TimerHere");
+    the above console method will out take taken by JS Engine to evaluate 3 lines b/w time & timeEnd methods.
+
+
+ Q 2) write difference b/w var, let and const 
+var is used to declare a variable of global scope if that variable is assigned some other value later in the code then the variable will be updated with latest change.
+ex: 
+var name="sanjay";
+name="jay";
+console.log(name);
+
+output: jay
+
+let is used more as a modern way of declaring variable.
+i.e to declare varables of same name containing diffenent values for global and local scope.
+ex:
+var name="sanjay";
+{
+    let name = "sanjana";
+    console.log("the value of name in local scope:",name)
+}
+console.log("the global value of name  ",name);
+
+output:the value of name in local scope: sanjana
+     the global value of name   sanjay
+
+const is used to declare constants i.e once declared their value cannot be changed throughout the program.
+However we have to be careful of a few thongs while declaring constants. 
+They must be declared with initialization,
+const array can be changed but cannot be declared with new values.
+ex:
+const person;
+person="Ajay";
+console.log(person);
+
+output: Uncaught SyntaxError: Missing initializer in const declaration
+
+const newPerson= "Ajay"
+newPerson ="vijay"
+console.log(newPerson);
+
+output:Uncaught TypeError: Assignment to constant variable.
+
+const names=["amar","akbar"];
+names.push("anthony");
+console.log(names);
+
+output: ["amar", "akbar", "anthony"]
+
+Q3) write brief intro of datatypes;
+Ans Information can only be stored in form of data. To store data we need variable,depending upon the kind of data/information we want to store,we can choose most suitable data type for the variable.
+
+following are different types of datatypes in javascript:
+string:
+To store data in string format. can be used to store data like name,place etc;
+ex: var name="Mane"
+
+Number:
+To store numerical data , can be float/decimal value as well.
+ex; var percentage= 59.92;
+
+Boolean:
+To store data in form of boolean value i.e true/false. Mostly used for storing response,state etc.
+var isMale= true;
+
+Array:
+To store data in a continuous block of data we can use array.
+ex: var days = ["Mon","Tues","Wed"]
+
+Object:
+To store the common properties of a class.
+ex : var student={
+    name:"Shabana";
+    roll no:24;
+    subject:"IT";
+}
