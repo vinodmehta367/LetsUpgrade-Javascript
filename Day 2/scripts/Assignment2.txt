@@ -1,0 +1,32 @@
+Methods of String and array
+String Methods:
+1)splice(startposition, endPosition)
+
+to split the string from particular index to endPosition both these indiices are excluded from resulting string. If end position is not provided then entire string from startposition is spliced out.
+
+2)substring()
+
+similar to splice but cannot accept negative values i.e slicing string in reverse order from last index to first.
+
+3)substr(startposition,lengthofsubstring)
+
+similar to substring() method but instead of endPosition we pass lengthofsubstring as second argument so only that many characters are spliced out.
+
+4)replace(old,new)
+replaces the existing characters from a string to new characters
+By default replaces only first occurance
+is case sensitive
+
+5)trim()
+removes white spaces from string from end and beginning.
+
+array methods:
+splice(position,no. of elements to be removed,new elements)
+In arrays spice is used to add new elements to array.
+
+sort()
+works fine for string to sort in ascending order
+
+reverse()
+to reverse or sort in descending order.
+
